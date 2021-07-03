@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.androidbasics;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.LinearLayout;
-import android.widget.RelativeLayout;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -16,32 +14,32 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button linearlayout = findViewById(R.id.linearLayoutButton);
+        Button linearLayout = findViewById(R.id.linearLayoutButton);
         Button relativeLayout = findViewById(R.id.relativeLayoutButton);
         Button listView = findViewById(R.id.listViewButton);
+        Button cardViewSpinner = findViewById(R.id.cardViewSpinnerButton);
+        Button recyclerView = findViewById(R.id.recyclerViewButton);
+        Button navigation = findViewById(R.id.navigationButton);
 
 
-        linearlayout.setOnClickListener(new View.OnClickListener() {
+        linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent linearIntent = new Intent(String.valueOf(MainActivity.this),LinearLayout.class)
-                starActivity(linearIntent);
-
-            }
-
-            private void starActivity(Intent linearIntent) {
+                Intent linearIntent = new Intent(MainActivity.this,LinearLayout.class);
+                linearIntent.putExtra("destination", "Linear Layout Passed from Intent");
+                startActivity(linearIntent);
             }
         });
 
-        listView.setOnClickListener(new View.OnClickListener() {
+        relativeLayout.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RelativeLayout.class);
+                Intent intent = new Intent(MainActivity.this,RelativeLayout.class);
                 startActivity(intent);
             }
         });
 
-        listView.setOnClickListener(new View.OnClickListener() {
+        listView.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ListViewExample.class);
@@ -49,6 +47,31 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        cardViewSpinner.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, CardViewSpinner.class);
+                startActivity(intent);
+            }
+        });
+
+        recyclerView.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RecyclerView.class);
+                startActivity(intent);
+            }
+        });
+
+        navigation.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, NavigationHost.class);
+                startActivity(intent);
+            }
+        });
+
     }
+
 
 }

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="linearLayoutButton" type="id" />
+    <item name="relativeLayoutButton" type="id" />
+    <item name="listViewButton" type="id" />
+</resources>

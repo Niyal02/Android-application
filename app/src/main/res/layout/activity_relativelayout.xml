@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Relativelayout"
+    android:id="@+id/RelativeLayoutParent">
+
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="200"
+        android:layout_height="47"
+        android:layout_marginLeft="hello"
+        android:text="Button"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="105dp" />
+
+
+    <FrameLayout
+        android:layout_width="325dp"
+        android:layout_height="641dp"
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="28dp">
+
+        <TextView
+            android:id="@+id/firstTextView"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:text="Hello"
+
+            android:textAlignment="center" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputEditTextBox"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/firstTextView"
+            android:hint="Input text" />
+    </FrameLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

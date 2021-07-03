@@ -6,11 +6,64 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView7"
+    <Button
+        android:id="@+id/button5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Linear Layout"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="118dp" />
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative layout"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="261dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="List View Example"
+        tools:layout_editor_absoluteX="112dp"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="280dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:inputType="textPersonName"
+        android:text="Android Basics"
+        android:textSize="30"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="291dp"
+        android:layout_height="42dp"
+        android:text="Power Workshop 2021"
+        android:textSize="28"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="645dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="96dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="631dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

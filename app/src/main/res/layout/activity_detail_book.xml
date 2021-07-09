@@ -9,52 +9,50 @@
 
     <ImageView
         android:id="@+id/studentimageView"
-        android:layout_width="140dp"
-        android:layout_height="151dp"
-        android:layout_marginStart="44dp"
+        android:layout_width="143dp"
+        android:layout_height="208dp"
+        android:layout_marginStart="32dp"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="192dp"
+        tools:layout_editor_absoluteY="180dp"
         tools:srcCompat="@tools:sample/avatars" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView16"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Name : Akash Regmi"
-        android:textStyle="bold"
+        android:layout_width="157dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter Name"
         app:layout_constraintBottom_toTopOf="@+id/textView17"
-        tools:layout_editor_absoluteX="213dp" />
+        tools:layout_editor_absoluteX="204dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:text="Roll no : 24"
-        android:textStyle="bold"
+        android:layout_width="159dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="8dp"
+        android:hint="Enter Roll no"
+
         app:layout_constraintBottom_toTopOf="@+id/textView18"
-        tools:layout_editor_absoluteX="213dp" />
+        tools:layout_editor_absoluteX="204dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView18"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="64dp"
-        android:text="Batch : 2024"
-        android:textStyle="bold"
+        android:layout_width="160dp"
+        android:layout_height="43dp"
+        android:layout_marginBottom="56dp"
+        android:hint="Enter your Batch"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        tools:layout_editor_absoluteX="213dp" />
+        tools:layout_editor_absoluteX="204dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView19"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="36dp"
-        android:text="Validity : 31st Dec, 2024"
-        android:textStyle="bold"
+        android:layout_width="162dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="4dp"
+        android:hint="Validity : 2022/23/24"
+        android:textSize="15"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
-        tools:layout_editor_absoluteX="213dp" />
+        tools:layout_editor_absoluteX="204dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline3"
@@ -62,28 +60,20 @@
         android:layout_height="wrap_content"
         android:background="@color/white"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="359dp" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="114dp"
-        android:layout_height="73dp"
-        android:text="Previous"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button2"
-        tools:layout_editor_absoluteX="70dp" />
+        app:layout_constraintGuide_begin="392dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="114dp"
-        android:layout_height="69dp"
+        android:layout_width="147dp"
+        android:layout_height="61dp"
         android:layout_marginTop="220dp"
-        android:text="Next"
+        android:hint="Submit"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:layout_editor_absoluteX="231dp" />
+        tools:layout_editor_absoluteX="132dp" />
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="114dp"
+        android:layout_width="119dp"
         android:layout_height="36dp"
         android:text="DeerWalk "
         android:textColor="@android:color/holo_blue_dark"
@@ -124,58 +114,45 @@
         tools:layout_editor_absoluteX="177dp"
         tools:layout_editor_absoluteY="122dp" />
 
-    <TextView
-        android:id="@+id/textView23"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="DOB : 14/04/2002"
-        android:textSize="16"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="380dp" />
-
-    <TextView
+    <EditText
         android:id="@+id/textView24"
-        android:layout_width="215dp"
-        android:layout_height="32dp"
-        android:text="Father's Name : Bijay Regmi"
+        android:layout_width="198dp"
+        android:layout_height="39dp"
+        android:hint="Enter Father's Name "
         android:textSize="16"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="415dp" />
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="414dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contact no. : 9846557253"
+        android:layout_width="197dp"
+        android:layout_height="40dp"
+        android:hint="Enter Contact no"
         android:textSize="16"
-        android:textStyle="bold"
         tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="479dp" />
+        tools:layout_editor_absoluteY="467dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/textView26"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Address : Sitapaila"
+        android:layout_width="203dp"
+        android:layout_height="37dp"
+        android:hint="Enter Address "
         android:textSize="16"
-        android:textStyle="bold"
-        tools:layout_editor_absoluteX="44dp"
-        tools:layout_editor_absoluteY="517dp" />
+        tools:layout_editor_absoluteX="43dp"
+        tools:layout_editor_absoluteY="519dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="462dp" />
+        app:layout_constraintGuide_end="269dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="556dp" />
+        app:layout_constraintGuide_begin="579dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

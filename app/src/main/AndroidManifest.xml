@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/avatar"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
-        <activity android:name=".DetailBook"></activity>
+        <activity
+            android:name=".Utils"
+            android:label="@string/title_activity_utils"
+            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+        <activity android:name=".DetailBook" />
         <activity android:name=".BookRecyclerViewAdapter" />
         <activity android:name=".list_item_book" />
         <activity android:name=".book" />

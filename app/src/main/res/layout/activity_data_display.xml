@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayData"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/dfname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="20dp"
+        android:text="first name" />
+
+    <TextView
+        android:id="@+id/dlname"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="20dp"
+        android:text="last name" />
+
+    <TextView
+        android:id="@+id/ddateofbirth"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="20dp"
+        android:text="date of birth" />
+
+    <TextView
+        android:id="@+id/dfathersname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="20dp"
+        android:text="Fathers name" />
+
+
+    <TextView
+        android:id="@+id/demail"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="20dp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/dnumber"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="20dp"
+        android:text="Moblie number" />
+
+    <TextView
+        android:id="@+id/dgender"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:layout_marginBottom="20dp"
+        android:text="Gender" />
+
+
+</LinearLayout>

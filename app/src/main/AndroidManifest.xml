@@ -9,10 +9,12 @@
         android:roundIcon="@mipmap/avatar"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
+        <activity android:name=".data_display"></activity>
+        <activity android:name=".Registration_form" />
         <activity
             android:name=".Utils"
             android:label="@string/title_activity_utils"
-            android:theme="@style/Theme.MyApplication.NoActionBar"></activity>
+            android:theme="@style/Theme.MyApplication.NoActionBar" />
         <activity android:name=".DetailBook" />
         <activity android:name=".BookRecyclerViewAdapter" />
         <activity android:name=".list_item_book" />

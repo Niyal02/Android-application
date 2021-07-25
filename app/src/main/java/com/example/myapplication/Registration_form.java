@@ -1,4 +1,4 @@
-package com.example.firstapp;
+package com.example.myapplication.;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,7 +17,7 @@ import com.example.myapplication.R;
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener
 {
 
-    private EditText fname, lname, username, email, number;
+    private EditText fname, lname, gender,fathers,dateofbirth, email, number;
     private Button add;
 
     @Override
@@ -27,8 +27,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         setContentView(R.layout.activity_main);
 
         Spinner spinner = findViewById(R.id.spinner1);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.gender, android.R.layout.simple_spinner_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array., android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
@@ -38,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         fname = findViewById(R.id.Rfname);
         lname = findViewById(R.id.Rlname);
-        dob = findViewById(R.id.Rdob);
+        dateofbirth = findViewById(R.id.Rdob);
         fathers = findViewById(R.id.Rfathers);
         email = findViewById(R.id.Remail);
         number = findViewById(R.id.Rnumber);
@@ -53,10 +52,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 String Email = email.getText().toString();
                 String Number = number.getText().toString();
 
-                Intent intent = new Intent(MainActivity.this, DisplayData.class);
+                Intent intent = new Intent(MainActivity.this, .class);
 
                 intent.putExtra("keyFirstName", FirstName);
-                intent.putExtra("keyLastName", LastName);;
+                intent.putExtra("keyLastName", LastName);
+                intent.putExtra("keyFather's Name", LastName);
+                intent.putExtra("keyDate of Birth", LastName);
                 intent.putExtra("keyEmail", Email);
                 intent.putExtra("keyNumber", Number);
 

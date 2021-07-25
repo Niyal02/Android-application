@@ -16,7 +16,8 @@
         android:layout_marginLeft="120dp"
         android:layout_marginTop="200dp"
         android:layout_marginBottom="20dp"
-        android:text="first name" />
+        android:textSize="20dp"
+        android:text="First name" />
 
     <TextView
         android:id="@+id/dlname"
@@ -24,7 +25,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="120dp"
         android:layout_marginBottom="20dp"
-        android:text="last name" />
+        android:textSize="20dp"
+        android:text="Last name" />
 
     <TextView
         android:id="@+id/ddateofbirth"
@@ -32,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="120dp"
         android:layout_marginBottom="20dp"
+        android:textSize="20dp"
         android:text="date of birth" />
 
     <TextView
@@ -40,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="120dp"
         android:layout_marginBottom="20dp"
+        android:textSize="20dp"
         android:text="Fathers name" />
 
 
@@ -49,6 +53,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="120dp"
         android:layout_marginBottom="20dp"
+        android:textSize="20dp"
         android:text="Email" />
 
     <TextView
@@ -57,6 +62,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="120dp"
         android:layout_marginBottom="20dp"
+        android:textSize="20dp"
         android:text="Moblie number" />
 
     <TextView
@@ -65,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="120dp"
         android:layout_marginBottom="20dp"
+        android:textSize="20dp"
         android:text="Gender" />
 
 

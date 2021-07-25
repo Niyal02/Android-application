@@ -1,4 +1,4 @@
-package com.example.androidbasics;
+package com.example.myapplication.;
 
 import android.content.Context;
 import android.transition.TransitionManager;
@@ -25,7 +25,7 @@ public class BookRecyclerViewAdapter extends RecyclerView.Adapter<BookRecyclerVi
 
     private static final String TAG = "BookRecyclerViewAdapter";
 
-    private ArrayList<Book> books = new ArrayList<>();
+    private ArrayList<com.example.androidbasics.Book> books = new ArrayList<>();
     private Context context;
 
     public BookRecyclerViewAdapter(Context context) {
@@ -76,7 +76,7 @@ public class BookRecyclerViewAdapter extends RecyclerView.Adapter<BookRecyclerVi
         return books.size();
     }
 
-    public void setBooks(ArrayList<Book> books) {
+    public void setBooks(ArrayList<com.example.androidbasics.Book> books) {
         this.books = books;
         notifyDataSetChanged();
     }

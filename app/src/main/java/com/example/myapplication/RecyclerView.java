@@ -1,4 +1,4 @@
-package com.example.androidbasics;
+package com.example.myapplication.;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -28,7 +28,7 @@ public class RecyclerView extends AppCompatActivity {
         contacts.add(new Contact("Aang","aang@avatar.com","https://static3.srcdn.com/wordpress/wp-content/uploads/2020/06/Avatar-The-Last-Airbender-Old-Aang.jpg?q=50&fit=crop&w=960&h=500&dpr=1.5"));
         contacts.add(new Contact("Sokka","sokka@avatar.com","https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sokka-avatar-the-last-airbender-1590006889.png?resize=480:*"));
 
-        ContactRecViewAdapter contactRecViewAdapter = new ContactRecViewAdapter(this);
+        com.example.androidbasics.ContactRecViewAdapter contactRecViewAdapter = new com.example.androidbasics.ContactRecViewAdapter(this);
 
         contactRecViewAdapter.setContacts(contacts);
 
